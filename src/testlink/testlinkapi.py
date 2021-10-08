@@ -163,7 +163,7 @@ class TestlinkAPIClient(TestlinkAPIGeneric):
         """ returns project id , the nodeid belongs to."""
         
         # get node path 
-        node_path = self.getFullPath(int(a_nodeid))[a_nodeid]
+        node_path = self.getFullPath(int(a_nodeid))[str(a_nodeid)]
         # get project and id
         a_project = self.getTestProjectByName(node_path[0])
         return a_project['id']
