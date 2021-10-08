@@ -435,7 +435,7 @@ newResultID_B = newResult[0]['id']
 # add this python file as Attachemnt to last execution of TC_B with 
 # different filename 'MyPyExampleApiGeneric.py'
 a_file=open(NEWATTACHMENT_PY)
-newAttachment = myTestLink.uploadExecutionAttachment(a_file, newResultID_B, 
+newAttachment = myTestLink.uploadExecutionAttachment(NEWATTACHMENT_PY, newResultID_B,
         title='Textfile Example', description='Text Attachment Example for a TestCase Execution',
         filename='MyPyExampleApiGeneric.py')
 print("uploadExecutionAttachment", newAttachment)

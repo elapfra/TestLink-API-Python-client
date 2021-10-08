@@ -247,8 +247,9 @@ print("assignRequirements reqA to TC-B",
       "sorry not possible - required srs_id -rec_spec(id) not available")
 
 # get coverage for requirements reqA
-response = myTestLink.getReqCoverage(newProjectID, reqA['req_doc_id'])
-print("getReqCoverage reqA", response)
+# testlink.testlinkerrors.TLResponseError: 200: (getReqCoverage) - Parameter requirementid is required, but has not been provided
+# response = myTestLink.getReqCoverage(newProjectID, reqA['req_doc_id'])
+# print("getReqCoverage reqA", response)
 
 # add png file as Attachemnt to a requirement specification.
 print("uploadRequirementSpecificationAttachment", 
